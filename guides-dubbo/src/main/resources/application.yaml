@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: test
+server:
+  port: 8080
+glmapper:
+  property:
+    - name: glmapper
+      age: 26
+    - name: slg
+      age: 26
