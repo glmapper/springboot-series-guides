@@ -19,14 +19,18 @@ public class TestBean {
     private String appName;
 
     @Value("${testKey}")
-    private String prop_inner_test_key;
+    private String testKey;
+
+    @Value("${additionKey}")
+    private String additionKey;
+
 
 
     @PostConstruct
     private void init(){
         System.out.println("-------------------------------");
-        System.out.println(appName);
-        System.out.println(prop_inner_test_key);
+        System.out.println(testKey);
+        System.out.println(additionKey);
         System.out.println("-------------------------------");
     }
 }
