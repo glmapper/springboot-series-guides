@@ -9,6 +9,9 @@
         <module>guides-mongodb</module>
         <module>guides-properties</module>
         <module>guides-logger</module>
+        <module>guides-mybatis</module>
+        <module>guides-starter</module>
+        <module>guides-autoconfigure</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -44,6 +47,17 @@
             </exclusions>
         </dependency>
     </dependencies>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.glmapper.bridge.boot</groupId>
+                <artifactId>facade</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>

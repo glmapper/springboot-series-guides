@@ -9,25 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>guides-dubbo</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>consumer</module>
-        <module>facade</module>
-        <module>provider</module>
-    </modules>
-
+    <artifactId>guides-autoconfigure</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.6</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
